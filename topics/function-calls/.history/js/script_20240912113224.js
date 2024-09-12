@@ -14,7 +14,6 @@
  * Creates a 640 x 480 canvas on program launch
 */
 function setup() {
-    // Creates the canvas
     createCanvas(640, 480);
 }
 
@@ -23,8 +22,6 @@ function setup() {
  * Creates a red background and white square every frame. 
 */
 function draw() {
-    // Creates the background
     background(255, 0, 0);
-    // Creates the rectangle
     rect(240, 160, 150, 150);
 }
