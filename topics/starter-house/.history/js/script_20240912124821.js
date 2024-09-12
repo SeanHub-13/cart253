@@ -1,10 +1,10 @@
 /**
- * My Reconstructed House
- * Sean Verba
+ * My House
+ * Pippin Barr
  * 
  * Draws a house with shapes.
  * 
- * Disclaimer: Not actually my house. Or Professor Barrs house.
+ * Disclaimer: Not actually my house.
  * 
  * Uses:
  * p5.js
@@ -19,7 +19,7 @@ function setup() {
 }
 
 /**
- * Draws the eternal universe that I, god, have created
+ * Draws a house
  */
 function draw() {
 
@@ -27,13 +27,39 @@ function draw() {
     drawcloud();
     drawground();
     drawhouse();
+
+    // A window
+    push();
+    // You can also write colour names from the CSS standard in quotes
+    // https://www.w3.org/wiki/CSS/Properties/color/keywords
+    stroke("deeppink");
+    strokeWeight(5);
+    fill("blanchedalmond");
+    rect(220, 260, 80, 80);
+    pop();
+
+    // An entrace
+
+    // The door
+    push();
+    noStroke();
+    fill(0, 128, 0);
+    rect(320, 300, 80, 120);
+    pop();
+
+    // The doorknob
+    push();
+    noStroke();
+    fill(255, 215, 0);
+    ellipse(340, 360, 10, 10);
+    pop();
 }
-// Draws the sky
+
 function drawsky() {
     // The sky
     background(150, 200, 250);
 }
-// Draws a cloud
+
 function drawcloud() {
     // A cloud
     push();
@@ -49,7 +75,7 @@ function drawcloud() {
     ellipse(220, 120, 60, 60);
     pop();
 }
-// Draws the ground
+
 function drawground() {
     // The ground
     push();
@@ -58,15 +84,11 @@ function drawground() {
     rect(0, 400, 640, 480);
     pop();
 }
-// Draws a house
+
 function drawhouse() {
     drawbody();
-    drawroof();
-    drawwindow();
-    drawdoor();
-    drawdoorknob();
 }
-// Draws a house body
+
 function drawbody() {
     // The main body of the house
     push();
@@ -75,7 +97,7 @@ function drawbody() {
     rect(200, 240, 280, 180);
     pop();
 }
-// Draws a roof
+
 function drawroof() {
     // The roof
     push();
@@ -83,35 +105,5 @@ function drawroof() {
     // You can also write colors in hex code in quote marks
     fill("#dc143c");
     triangle(180, 240, 340, 120, 500, 240);
-    pop();
-}
-// Draws a window
-function drawwindow() {
-    // A window
-    push();
-    // You can also write colour names from the CSS standard in quotes
-    // https://www.w3.org/wiki/CSS/Properties/color/keywords
-    stroke("deeppink");
-    strokeWeight(5);
-    fill("blanchedalmond");
-    rect(220, 260, 80, 80);
-    pop();
-}
-// Draws a door
-function drawdoor() {
-    // The door
-    push();
-    noStroke();
-    fill(0, 128, 0);
-    rect(320, 300, 80, 120);
-    pop();
-}
-// Draws a doorknob
-function drawdoorknob() {
-    // The doorknob
-    push();
-    noStroke();
-    fill(255, 215, 0);
-    ellipse(340, 360, 10, 10);
     pop();
 }

@@ -1,10 +1,10 @@
 /**
- * My Reconstructed House
- * Sean Verba
+ * My House
+ * Pippin Barr
  * 
  * Draws a house with shapes.
  * 
- * Disclaimer: Not actually my house. Or Professor Barrs house.
+ * Disclaimer: Not actually my house.
  * 
  * Uses:
  * p5.js

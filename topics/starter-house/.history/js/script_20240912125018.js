@@ -1,10 +1,10 @@
 /**
- * My Reconstructed House
- * Sean Verba
+ * My House
+ * Pippin Barr
  * 
  * Draws a house with shapes.
  * 
- * Disclaimer: Not actually my house. Or Professor Barrs house.
+ * Disclaimer: Not actually my house.
  * 
  * Uses:
  * p5.js
@@ -19,7 +19,7 @@ function setup() {
 }
 
 /**
- * Draws the eternal universe that I, god, have created
+ * Draws a house
  */
 function draw() {
 
@@ -28,12 +28,12 @@ function draw() {
     drawground();
     drawhouse();
 }
-// Draws the sky
+
 function drawsky() {
     // The sky
     background(150, 200, 250);
 }
-// Draws a cloud
+
 function drawcloud() {
     // A cloud
     push();
@@ -49,7 +49,7 @@ function drawcloud() {
     ellipse(220, 120, 60, 60);
     pop();
 }
-// Draws the ground
+
 function drawground() {
     // The ground
     push();
@@ -58,7 +58,7 @@ function drawground() {
     rect(0, 400, 640, 480);
     pop();
 }
-// Draws a house
+
 function drawhouse() {
     drawbody();
     drawroof();
@@ -66,7 +66,7 @@ function drawhouse() {
     drawdoor();
     drawdoorknob();
 }
-// Draws a house body
+
 function drawbody() {
     // The main body of the house
     push();
@@ -75,7 +75,7 @@ function drawbody() {
     rect(200, 240, 280, 180);
     pop();
 }
-// Draws a roof
+
 function drawroof() {
     // The roof
     push();
@@ -85,7 +85,7 @@ function drawroof() {
     triangle(180, 240, 340, 120, 500, 240);
     pop();
 }
-// Draws a window
+
 function drawwindow() {
     // A window
     push();
@@ -97,7 +97,7 @@ function drawwindow() {
     rect(220, 260, 80, 80);
     pop();
 }
-// Draws a door
+
 function drawdoor() {
     // The door
     push();
@@ -106,7 +106,7 @@ function drawdoor() {
     rect(320, 300, 80, 120);
     pop();
 }
-// Draws a doorknob
+
 function drawdoorknob() {
     // The doorknob
     push();
