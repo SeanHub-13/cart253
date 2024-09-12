@@ -51,7 +51,7 @@ function drawBody() {
  */
 function drawLegs() {
     push();
-    stroke(0);
+    noStroke();
     strokeWeight(10);
     line(100, 200, 400, 200);
     line(100, 250, 400, 250);
@@ -64,7 +64,7 @@ function drawLegs() {
  */
 function drawAntennae() {
     push();
-    stroke(0);
+    noStroke();
     strokeWeight(5);
     line(250, 250, 200, 50);
     line(250, 250, 300, 50);
