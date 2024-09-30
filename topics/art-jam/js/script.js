@@ -8,6 +8,8 @@
 "use strict";
 
 // Draws front grass
+let targetImage = undefined;
+
 let grassFront = {
     x: 0,
     y: 650,
@@ -32,27 +34,50 @@ let grassBack = {
     }
 }
 
-/**
- * Setup runs code on start-up
-*/
+
+//Setup runs code on start-up
 function setup() {
     createCanvas(800, 800);
 }
 
 
-/**
- * Runs code every frame
-*/
+//Runs code every frame
 function draw() {
-    background(200, 200, 255)
+    preload();
+    if (state === "titlescreen") {
+        titlescreen();
+    }
+    else if (state === "game") {
+        game();
+    }
+    drawBackdrop();
+    drawBackGrass();
+    drawFrontGrass();
+    drawTarget();
+}
 
+function preload() {
+    targetImage = loadImage('assets/images/Target.png');
+}
+
+function drawTarget() {
+    image(targetImage, 32, 32);
+}
+
+function drawBackdrop() {
+    background(200, 200, 255)
+}
+
+function drawBackGrass() {
     //Draw back grass
     push();
     noStroke();
     fill(grassBack.fill.r, grassBack.fill.g, grassBack.fill.b)
     rect(grassBack.x, grassBack.y, grassBack.width, grassBack.height)
     pop();
+}
 
+function drawFrontGrass() {
     //Draw front grass
     push();
     noStroke();
@@ -60,3 +85,18 @@ function draw() {
     rect(grassFront.x, grassFront.y, grassFront.width, grassFront.height)
     pop();
 }
+
+/** ----------------------------------------------------------------------------------------------------------------------------- */
+/** ----------------------------------------------------------------------------------------------------------------------------- */
+/** ----------------------------------------------------------------------------------------------------------------------------- */
+
+function titlescreen() {
+
+}
+
+/** ----------------------------------------------------------------------------------------------------------------------------- */
+
+function game() {
+
+}
+
