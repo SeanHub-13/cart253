@@ -53,7 +53,7 @@ function checkInput() {
     const distance = dist(mouseX, mouseY, creature.x, creature.y);
     const mouseIsOverlapping = (distance < creature.size / 2);
     const mouseIsMoving = (movedX !== 0 || movedY !== 0);
-    if (mouseIsOverlapping && mouseIsMoving) {
+    if (mouseIsOverlapping) {
         creature.fill = creature.fills.happy;
     }
     else {
